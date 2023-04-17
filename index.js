@@ -45,7 +45,7 @@ function moveDodgerDown() {
     }
 }
 
-document.addEventListener("keydown", function (e) {
+function keyCntrl (e){
     if (e.key === "ArrowLeft") {
         moveDodgerLeft();
     }
@@ -58,6 +58,5 @@ document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowDown") {
         moveDodgerDown();
     }
-  });
-
-done()
+}
+document.addEventListener("keydown", keyCntrl(e));
